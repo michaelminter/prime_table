@@ -1,11 +1,9 @@
 # Coding Challenge
 
 ## Objective
-Write a program that prints out a multiplication table of the first 10 prime numbers.
-
-The program must run from the command line and print one table to STDOUT.
-
-The first row and column of the table should have 10 primes, with each cell containing the product of the primes for the corresponding row and column.
+* Write a program that prints out a multiplication table of the first 10 prime numbers.
+* The program must run from the command line and print one table to STDOUT.
+* The first row and column of the table should have 10 primes, with each cell containing the product of the primes for the corresponding row and column.
 
 ## Notes
 * Consider complexity. How fast does your code run? How does it scale?
@@ -16,6 +14,26 @@ The first row and column of the table should have 10 primes, with each cell cont
 ## Guidelines:
 * We value your time! The purpose of the challenge is to get a glimpse of how you approach software development and establish a common ground for technical discussion when you come in. We find that developers who spend 1-2 hours on a completed coding solution tend to have enough material for engaging conversation. If you finish faster, or end up spending more time on something interesting, great!
 * It would be preferable if the solution was implemented in Ruby or Python.
+
+## Install
+
+Using RVM
+
+```bash
+rvm use 2.4.1@prime-table --create --ruby-version
+```
+
+Install bundler
+
+```bash
+$ gem install bundler
+```
+
+Bundle install gems
+
+```bash
+$ bundle install
+```
 
 ## Running
 
@@ -56,3 +74,21 @@ Usage: prime_table.rb [options]
     -o, --operator=OPERATOR          Mathematical operator for row-column matches
 ```
 
+Example:
+
+```bash
+ruby prime_table.rb -r 5 -c 7 -o "+"
++----+----+----+----+----+----+----+----+
+|    | 2  | 3  | 5  | 7  | 11 | 13 | 17 |
++----+----+----+----+----+----+----+----+
+| 2  | 4  | 5  | 7  | 9  | 13 | 15 | 19 |
++----+----+----+----+----+----+----+----+
+| 3  | 5  | 6  | 8  | 10 | 14 | 16 | 20 |
++----+----+----+----+----+----+----+----+
+| 5  | 7  | 8  | 10 | 12 | 16 | 18 | 22 |
++----+----+----+----+----+----+----+----+
+| 7  | 9  | 10 | 12 | 14 | 18 | 20 | 24 |
++----+----+----+----+----+----+----+----+
+| 11 | 13 | 14 | 16 | 18 | 22 | 24 | 28 |
++----+----+----+----+----+----+----+----+
+```
