@@ -92,3 +92,9 @@ ruby prime_table.rb -r 5 -c 7 -o "+"
 | 11 | 13 | 14 | 16 | 18 | 22 | 24 | 28 |
 +----+----+----+----+----+----+----+----+
 ```
+
+## Testing
+
+```bash
+$ rspec spec/lib/prime_table_spec.rb
+```
